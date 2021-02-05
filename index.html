@@ -24,7 +24,7 @@
         How To Use It!!
       </button>
     </div>
-    <div class="col-sm-3"></div>
+    <div class="col-sm-3"><button class="btn btn-primary text-center" id="signOut">SIGN OUT</button></div>
     </div>
       
       <!-- Modal -->
@@ -136,6 +136,7 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
 
 <script>
   // Your web app's Firebase configuration
@@ -158,20 +159,17 @@
 
 </script>
 <script>
-  document.getElementById("btn").addEventListener("click",(e)=>{
-    e.preventDefault()
-    const uname= document.getElementById('uname').value
-   const pwd=document.getElementById('pwd').value
-   console.log(uname,pwd)
-    if(uname=="rkmicro@product.com"&&pwd=="rkmicroproduct")
-    {
-      console.log('in')
-        document.getElementById('mainPage').style.display="block"
-        document.getElementById('form').style.display="none"
-    }
+  // document.getElementById("btn").addEventListener("click",(e)=>{
+  //   e.preventDefault()
+  //   const uname= document.getElementById('uname').value
+  //  const pwd=document.getElementById('pwd').value
+  //   if(uname=="rkmicro@product.com"&&pwd=="rkmicroproduct")
+  //   {
+
+  //   }
 
 
-  })
+  // })
 //   function run(){ 
     
    
